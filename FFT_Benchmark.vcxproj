@@ -64,6 +64,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="KissFFT\kiss_fft.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KissFFT\kissfft.hh" />
+    <ClInclude Include="KissFFT\kiss_fft.h" />
+    <ClInclude Include="KissFFT\_kiss_fft_guts.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,6 +6,13 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9D7E29BB190B77E100748D70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E29BA190B77E100748D70 /* main.cpp */; };
+		9D7E29C0190B7C1C00748D70 /* libboost_chrono-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E29BD190B7C1C00748D70 /* libboost_chrono-mt.dylib */; };
+		9D7E29C1190B7C1C00748D70 /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E29BE190B7C1C00748D70 /* libboost_system-mt.dylib */; };
+		9D7E29C2190B7C1C00748D70 /* libboost_timer-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7E29BF190B7C1C00748D70 /* libboost_timer-mt.dylib */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9DA96642190B766900718D1F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D7E29BA190B77E100748D70 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../main.cpp; sourceTree = "<group>"; };
+		9D7E29BD190B7C1C00748D70 /* libboost_chrono-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_chrono-mt.dylib"; path = "/usr/local/lib/libboost_chrono-mt.dylib"; sourceTree = "<absolute>"; };
+		9D7E29BE190B7C1C00748D70 /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "/usr/local/lib/libboost_system-mt.dylib"; sourceTree = "<absolute>"; };
+		9D7E29BF190B7C1C00748D70 /* libboost_timer-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_timer-mt.dylib"; path = "/usr/local/lib/libboost_timer-mt.dylib"; sourceTree = "<absolute>"; };
 		9DA96644190B766900718D1F /* KissFFT_Benchmark */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KissFFT_Benchmark; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -27,16 +38,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7E29C2190B7C1C00748D70 /* libboost_timer-mt.dylib in Frameworks */,
+				9D7E29C1190B7C1C00748D70 /* libboost_system-mt.dylib in Frameworks */,
+				9D7E29C0190B7C1C00748D70 /* libboost_chrono-mt.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D7E29BC190B77EB00748D70 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E29BA190B77E100748D70 /* main.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		9D7E29C3190B7C2600748D70 /* boost */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E29BD190B7C1C00748D70 /* libboost_chrono-mt.dylib */,
+				9D7E29BE190B7C1C00748D70 /* libboost_system-mt.dylib */,
+				9D7E29BF190B7C1C00748D70 /* libboost_timer-mt.dylib */,
+			);
+			name = boost;
+			sourceTree = "<group>";
+		};
+		9D7E29C4190B7C3300748D70 /* extlib */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E29C3190B7C2600748D70 /* boost */,
+			);
+			name = extlib;
+			sourceTree = "<group>";
+		};
 		9DA9663B190B766900718D1F = {
 			isa = PBXGroup;
 			children = (
+				9D7E29BC190B77EB00748D70 /* Source */,
 				9DA96645190B766900718D1F /* Products */,
+				9D7E29C4190B7C3300748D70 /* extlib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7E29BB190B77E100748D70 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +179,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -169,6 +218,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};

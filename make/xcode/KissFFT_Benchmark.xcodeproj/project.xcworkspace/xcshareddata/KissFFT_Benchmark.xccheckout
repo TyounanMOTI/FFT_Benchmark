@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DDFFFE3C-A1C7-4AFC-B1AB-6940140A425A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KissFFT_Benchmark</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E79C6672-36FD-472F-8BDA-03D9FA258037</key>
+		<string>https://github.com/TyounanMOTI/FFT_Benchmark.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>make/xcode/KissFFT_Benchmark.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E79C6672-36FD-472F-8BDA-03D9FA258037</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TyounanMOTI/FFT_Benchmark.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E79C6672-36FD-472F-8BDA-03D9FA258037</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E79C6672-36FD-472F-8BDA-03D9FA258037</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FFT_Benchmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>

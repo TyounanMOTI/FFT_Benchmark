@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <boost/timer/timer.hpp>
+#include <kissfft.hh>
 
 int main()
 {
